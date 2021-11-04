@@ -25,22 +25,36 @@
          <div class="row">
         <?php
         $card = [
-            "text" => "Some quick example text to build on the card title and make up the bulk of the cards content.",
+            "text" => "Some  example text to build on the card title and make up the bulk of the cards content.",
             "image" => "https://ctl.s6img.com/society6/img/adgMtuCCB4Q3p5TcRpPI-pQoHfo/w_700/prints/~artwork/s6-0051/a/21951570_1688689/~~/abstract-music-u68-prints.jpg"
         ];
             for ($i=0; $i<4; $i++) {
-                echo <<<TAG
-
-                <div class="col-lg-3 col-md-6">
+                echo 
+"
+                <div class='col-lg-3 col-md-6'>
                     <article class='card' >
-                        <img class='card-img-top' src=${card["image"]}>
+                        <img class='card-img-top' src={$card["image"]}>
                         <main class='card-body'>
-                            <p class='card-text'>${card['text']}</p>
+                            <p class='card-text'>{$card['text']}</p>
                         </main>
                     </article>
-                </div>
+                </div>";
                 
-TAG;
+
+//                 echo <<<TAG
+
+//                 <div class="col-lg-3 col-md-6">
+//                     <article class='card' >
+//                         <img class='card-img-top' src=${card["image"]}>
+//                         <main class='card-body'>
+//                             <p class='card-text'>${card['text']}</p>
+//                         </main>
+//                     </article>
+//                 </div>
+                
+// TAG;
+// $valor = 'asdas';
+// echo "{$valor}".'</br>';
             }
         ?>
         </div>
